@@ -1,0 +1,17 @@
+$background-color-pink-1: #ff69b4;
+$background-color-pink-2: #ffd9ec;
+$text-color-white: #e4eef1;
+$text-color-black: #000000;
+$font-size-small: 1.2rem;
+$font-size-medium: 1.6rem;
+$font-size-large: 2.4rem;
+$font-family-base: "Noto Sans", sans-serif;
+
+html {
+    font-size: 62.5%;
+}
+
+*,
+body {
+    font-family: $font-family-base;
+}
