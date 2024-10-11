@@ -90,7 +90,6 @@ main .tips {
   background-color: #ffd9ec;
   justify-content: space-evenly;
   padding: 8rem 4rem;
-  flex-wrap: wrap;
 }
 
 @media screen and (max-width: 912px) {
@@ -130,6 +129,7 @@ main .tips {
   main .tips {
     padding: 4rem 2rem;
     gap: 2rem;
+    flex-wrap: wrap;
   }
 }
 @media screen and (max-width: 540px) {
