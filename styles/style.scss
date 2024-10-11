@@ -116,6 +116,73 @@ main {
     }
 }
 
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: $background-color-pink-1;
+    font-size: $font-size-medium;
+    color: $text-color-white;
+
+    nav,
+    div,
+    figure {
+        width: 33.3%;
+    }
+
+    nav {
+        ul {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            li {
+                a {
+                    figure {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        img {
+                            width: 7.5rem;
+                            transition: transform 0.3s;
+                            cursor: pointer;
+                        }
+
+                        &:hover {
+                            img {
+                                transform: scale(1.1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+
+        p {
+            text-align: center;
+        }
+    }
+
+    figure {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 12.5rem;
+        }
+    }
+}
+
 @media screen and (max-width: 912px) {
     header {
         height: auto;
@@ -162,6 +229,17 @@ main {
             flex-wrap: wrap;
         }
     }
+
+    footer {
+        flex-direction: column;
+        gap: 4rem;
+
+        div,
+        nav,
+        figure {
+            width: 100%;
+        }
+    }
 }
 
 @media screen and (max-width: 540px) {
@@ -201,6 +279,30 @@ main {
                 img {
                     width: 20rem;
                 }
+            }
+        }
+    }
+
+    footer {
+        font-size: $font-size-small;
+
+        nav {
+            ul {
+                li {
+                    a {
+                        figure {
+                            img {
+                                width: 5rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        figure {
+            img {
+                width: 10rem;
             }
         }
     }
