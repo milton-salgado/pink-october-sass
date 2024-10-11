@@ -26,14 +26,26 @@ Esse projeto foi apresentado como o desafio 02 do módulo 01 do curso de "Desenv
 
 ### 🚀 Funcionalidades
 
-Em breve...
+As funcionalidades disponíveis para os usuários estão listadas abaixo:
+
+- Decobrir o que é o "Outubro Rosa";
+- Aprender sobre a conscientização do câncer de mama;
+- Visualizar dicas de prevenção e cuidados;
+- Acessar links para as redes sociais do desenvolvedor.
+
 
 ### 🌐 Acesso
 
-Em breve...
+🖇️ [Clique aqui para acessar o projeto](https://milton-salgado.github.io/pink-october-sass/)
 
 ### 📸 Prévia
-Em breve...
+<div align="center">
+  <img src="./assets/images/previa-desktop.png">
+</div>
+
+<div align="center">
+  <img src="./assets/images/previa-mobile.png">
+</div>
 
 
 ## ⚙️ Construção
@@ -59,11 +71,18 @@ Ferramentas utilizadas na construção do projeto:
 
 ### 📌 Versão
 
-Em breve...
+Utilizei o Git para o controle de versão. 
+
+Versão atual: 1.0 (primeira versão)
 
 ## ✏️ Aprendizado
 
-Em breve...
+Ao fazer esse projeto, aprendi a:
+
+- Utilizar o SASS para a estilização do projeto
+- Utilizar variáveis e aninhamento no SASS
+- Revisar flexbox
+- Fixar o conteúdo de HTML e SASS
 
 ## ✒️ Autores
 
@@ -71,6 +90,7 @@ Em breve...
 
 ## 🎁 Agradecimentos
 
+* Agradeço ao instrutor Vinicius Bispo e à facilitadora Marina Gomes pelo auxílio no meu processo de aprendizagem e apoio na construção do projeto.
 * Agradeço também a você, visitante, por visualizar o meu projeto!
 
 ## 📨 Contato
