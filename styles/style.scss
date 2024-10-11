@@ -2,8 +2,8 @@ $background-color-pink-1: #ff69b4;
 $background-color-pink-2: #ffd9ec;
 $text-color-white: #e4eef1;
 $text-color-black: #000000;
-$font-size-small: 1.2rem;
-$font-size-medium: 1.6rem;
+$font-size-small: 1.6rem;
+$font-size-medium: 2rem;
 $font-size-large: 2.4rem;
 $font-family-base: "Noto Sans", sans-serif;
 
@@ -72,12 +72,57 @@ header {
     }
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    section {
+        display: flex;
+        align-items: center;
+        padding: 2rem 4rem;
+        width: 100%;
+        justify-content: space-between;
+
+        p {
+            font-size: $font-size-large;
+            width: 60%;
+            line-height: 4rem;
+            text-align: justify;
+        }
+
+        figure {
+            width: 40%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .about {
+        background-color: $background-color-pink-2;
+    }
+
+    .awareness {
+        background-color: $background-color-pink-1;
+        color: $text-color-white;
+        flex-direction: row-reverse;
+    }
+
+    .tips {
+        background-color: $background-color-pink-2;
+        justify-content: space-evenly;
+        padding: 8rem 4rem;
+        flex-wrap: wrap;
+    }
+}
+
 @media screen and (max-width: 912px) {
     header {
         height: auto;
         flex-direction: column;
-        padding: 2rem;
-        gap: 3rem;
+        padding: 4rem;
+        gap: 4rem;
 
         .logo {
             flex-direction: column;
@@ -86,9 +131,76 @@ header {
 
         nav {
             width: 100%;
+
+            ul {
+                justify-content: space-around;
+                gap: 3rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    main {
+        .about,
+        .awareness {
+            flex-direction: column;
+            gap: 3rem;
+            padding: 4rem 2rem;
+
+            p {
+                width: 100%;
+            }
+
+            figure {
+                width: 100%;
+            }
+        }
+
+        .tips {
+            padding: 4rem 2rem;
+            gap: 2rem;
+        }
+    }
+}
+
+@media screen and (max-width: 540px) {
+    header {
+        font-size: $font-size-medium;
+
+        nav {
             ul {
                 flex-direction: column;
-                gap: 3rem;
+                gap: 4rem;
+            }
+        }
+    }
+
+    main {
+        .about,
+        .awareness {
+            padding: 4rem;
+
+            p {
+                text-align: center;
+                font-size: $font-size-medium;
+            }
+
+            figure {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        .tips {
+            padding: 4rem 2rem;
+            flex-direction: column;
+
+            figure {
+                img {
+                    width: 20rem;
+                }
             }
         }
     }
